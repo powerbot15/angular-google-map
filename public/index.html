@@ -7,14 +7,23 @@
 </head>
 <body data-ng-controller = "mapController">
 
+<nav>
+    <div class="navigation">
+        <a ui-sref="home">Home</a>
+        <a ui-sref="map">Map</a>
+    </div>
+</nav>
 
-<div id="map" class="g-map"></div>
+<div class="view" ui-view></div>
 
-<div>{{testData}}</div>
+
+
+
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="js/angular-app.js"></script>
 <script src="js/controllers/map-controller.js"></script>
 <script src="js/directives/gmap.js"></script>

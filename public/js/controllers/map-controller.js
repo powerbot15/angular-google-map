@@ -3,12 +3,13 @@ var MapController = function($scope, $q){
     this.$scope = $scope;
     var _this = this;
 
-    this.$scope.mapDeffered = $q.defer();
-    this.$scope.mapDeffered.promise.then(function success(message){
+    _this.$scope.mapDeffered = $q.defer();
 
-        alert(message);
+    _this.$scope.mapDeffered.promise.then(function success(message){
 
-    })
+        console.log(message);
+
+    });
 
 };
 

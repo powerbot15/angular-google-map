@@ -1,7 +1,13 @@
 .g-map{
     position:absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     bottom: 0;
     right: 0;
+}
+/*.view{*/
+    /*position: relative;*/
+/*}*/
+.test-class{
+    font-size: 24pt;
 }
