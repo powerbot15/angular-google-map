@@ -1,4 +1,4 @@
-angular.module('app', ['map-controller', 'ui.router']).config(function($stateProvider, $urlRouterProvider) {
+angular.module('app', ['map-controller', 'home-controller', 'ui.router']).config(function($stateProvider, $urlRouterProvider) {
     //
     // Любые неопределенные url перенаправлять на /state1
     $urlRouterProvider.otherwise("/home");
@@ -7,10 +7,10 @@ angular.module('app', ['map-controller', 'ui.router']).config(function($statePro
     $stateProvider
         .state('home', {
             url: "/home",
-            templateUrl: "views/home.view.html",
-            controller: function($scope) {
-                $scope.baseData = 'Base home view';
-            }
+            templateUrl: "views/home.view.html"//,
+//            controller: function($scope) {
+//                $scope.baseData = 'Base home view';
+//            }
         })
         .state('map', {
             url: "/map",
